@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #0436aa;
+    --secondary-color: white;
+}
+
+.container {
+    margin: auto;
+    max-width: 50%;
+    padding: 20px 10px;
+    border: 2px solid;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+#btn-next {
+    display: block;
+    cursor: pointer;
+    padding: 14px 28px;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-size: large;
+}
+
+#btn-calculate {
+    display: none;
+    cursor: pointer;
+    padding: 14px 28px;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-size: large;
+}
+
+#input-billamt {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: var(--primary-color);
+}
+
+#input-cashamt {
+    display: none;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    text-align: center;
+    resize: vertical;
+    font-weight: bold;
+    font-size: large;
+    color: var(--primary-color);
+}
+
+#result-placeholder {
+    display: none;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 8px;
+}
+
+
+#tbl-result {
+    display: none;
+    width: 100%;
+    table-layout: fixed;
+
+}
+
+
+#tbl-result th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 8px;
+    word-wrap: break-word;
+}
+
+
+#tr-note-count td {
+    font-weight: bold;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 8px;
+    word-wrap: break-word;
+}
+
+#tr-notes td {
+    font-weight: bold;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 8px;
+    word-wrap: break-word;
+
+}
+#div-errormsg{
+    text-align: center;
+    font-size: small;
+    color: red;
+    padding: 8px 4px;
+}
+
+
+::-webkit-input-placeholder {
+    /* Edge */
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: large;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+::placeholder {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+
+}
